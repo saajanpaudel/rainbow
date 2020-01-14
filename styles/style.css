@@ -1,0 +1,403 @@
+.fa {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  border-radius: 50%;
+  transform: scale(1.1);
+  transition: .4s;
+}
+
+.container a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.fa:hover {
+    transform: scale(1.2);
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.copyright-heading{
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.nav.navbar-nav li a{
+  color: #FFF;
+  font-size: 20px;
+}
+
+.nav.navbar-nav li a:hover{
+  color: #ADADAD;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 35px;
+  left: 0;
+  background-color: #001733;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  font-family: poppins;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+body{
+  color:black;
+}
+
+.contents{
+  margin-top: 70px;
+}
+
+
+.form1{
+  margin-bottom: 50px ;
+}
+
+header .carousel-inner .item {
+  height: 100vh;
+}
+
+.banner{
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.carousel-caption{
+  padding-bottom: 250px;
+  font-family: poppins; 
+}
+
+.carousel-caption h2{
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: bold; 
+}
+
+.carousel-caption h2 span{
+  color: #00124D;
+}
+
+.carousel-caption a{
+   background: #00124D;
+   padding: 15px 35px;
+   display: inline-block;
+   margin-top: 15px;
+   color: #fff;
+   text-transform: uppercase;
+   border-radius: 25px; 
+}
+
+.carousel-indicators  .active{
+  background-color: #00124D;
+  border-color: white;
+}
+
+.navbar-fixed-bottom, .navbar-fixed-top{
+    color: white;}
+
+.navbar-fixed-top{
+  background-color: #00124D;
+}
+
+.navbar {
+  border-color: black;
+}
+
+.bottomnav {
+  background-color: #00124D;
+}
+
+.headcontainer {
+  background-color: #00124D;
+}
+
+.lianav {
+  font-size:25px;cursor:pointer;color: #FFFFFF;
+}
+
+.logo{
+  text-align: center;
+  margin-left: 400px;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+}
+
+.section .section-center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#booking {
+  font-family: 'poppins', sans-serif;
+  background-image: url('../imgs/booking.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: #191a1e;
+}
+
+.booking-form {
+  position: relative;
+  background: #fff;
+  max-width: 642px;
+  width: 100%;
+  margin: auto;
+  padding: 45px 25px 25px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.booking-form .form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.booking-form .form-control {
+  background-color: #fff;
+  height: 65px;
+  padding: 0px 15px;
+  padding-top: 24px;
+  color: #191a1e;
+  border: 2px solid #dfe5e9;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 4px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+  color: #dfe5e9;
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+  color: #dfe5e9;
+}
+
+.booking-form .form-control::placeholder {
+  color: #dfe5e9;
+}
+
+.booking-form .form-control:focus {
+  background: #f9fafb;
+}
+
+.booking-form input[type="date"].form-control:invalid {
+  color: #dfe5e9;
+}
+
+.booking-form select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  width: 32px;
+  line-height: 32px;
+  height: 32px;
+  text-align: center;
+  pointer-events: none;
+  color: #dfe5e9;
+  font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+  content: '\279C';
+  display: block;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 24px;
+  height: 24px;
+  font-size: 12px;
+  color: #98c9ee;
+}
+
+.booking-form .form-checkbox input {
+  position: absolute !important;
+  margin-left: -9999px !important;
+  visibility: hidden !important;
+}
+
+.booking-form .form-checkbox label {
+  position: relative;
+  padding-top: 4px;
+  padding-left: 30px;
+  font-weight: 700;
+  color: #191a1e;
+}
+
+.booking-form .form-checkbox label+label {
+  margin-left: 15px;
+}
+
+.booking-form .form-checkbox input+span {
+  position: absolute;
+  left: 2px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #dfe5e9;
+  border-radius: 50%;
+}
+
+.booking-form .form-checkbox input+span::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: #4fa3e3;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.booking-form .form-checkbox input:not(:checked)+span:after {
+  opacity: 0;
+}
+
+.booking-form .form-checkbox input:checked+span:after {
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+
+.booking-form .submit-btn {
+  color: #fff;
+  background-color: #4fa3e3;
+  font-weight: 400;
+  height: 65px;
+  font-size: 18px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  text-transform: uppercase
+}
+
+.booking-cta {
+  margin-top: 45px;
+}
+
+.booking-cta h1 {
+  margin-top: 100px;
+  font-size: 45px;
+  color: #00114d;
+  font-weight: 400;
+  font-family: poppins;
+  text-align: center;
+}
+
+.booking-cta p {
+  font-size: 35px;
+  color: #00114d;
+  text-align: center;
+  font-family: poppins;
+}
+
+.logsig a{
+margin-top: 100px}
+
+.gallery{
+  margin: 10px 37px;
+}
+.gallery img{
+  width: 230px;
+  height: 150px;
+  padding: 5px;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.gallery img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.flight_details label{
+  width: 240px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.all-flights a :hover{
+  background-color:black;
+}

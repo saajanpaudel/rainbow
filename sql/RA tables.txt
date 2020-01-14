@@ -1,0 +1,105 @@
+CREATE DATABASE rainbow_airlines
+
+CREATE TABLE `aboutus` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `contents` text DEFAULT NULL,
+ PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE `admins` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `ausername` varchar(255) DEFAULT NULL,
+ `name` varchar(255) NOT NULL,
+ `password` varchar(255) DEFAULT NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `username` (`ausername`)
+);
+
+
+CREATE TABLE `contactus` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `name` varchar(255) DEFAULT NULL,
+ `message` text DEFAULT NULL,
+ `email` varchar(255) DEFAULT NULL,
+ `Date` date NOT NULL DEFAULT current_timestamp(),
+ PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE `customers` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `name` varchar(255) DEFAULT NULL,
+ `address` varchar(255) DEFAULT NULL,
+ `email` varchar(255) DEFAULT NULL,
+ `username` varchar(255) DEFAULT NULL,
+ `password` varchar(255) DEFAULT NULL,
+ `phone` bigint(20) DEFAULT NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `username` (`username`),
+ UNIQUE KEY `phone` (`phone`),
+ UNIQUE KEY `email` (`email`) USING BTREE
+);
+
+
+CREATE TABLE `exploremore` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `contents` text DEFAULT NULL,
+ PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE `feedbacks` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `username` varchar(255) DEFAULT NULL,
+ `feedtitle` varchar(255) NOT NULL,
+ `feedback` text DEFAULT NULL,
+ `feeddate` date DEFAULT current_timestamp(),
+ `feedstatus` tinyint(1) NOT NULL DEFAULT 0,
+ PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE `flights` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `origin` varchar(255) NOT NULL,
+ `originair` varchar(255) NOT NULL,
+ `destination` varchar(255) NOT NULL,
+ `destinationair` varchar(255) NOT NULL,
+ `flightname` varchar(255) DEFAULT NULL,
+ `totalseats` int(11) NOT NULL,
+ `availableseats` int(11) NOT NULL,
+ `departdate` date DEFAULT NULL,
+ `departtime` time DEFAULT NULL,
+ `arrivedate` date DEFAULT NULL,
+ `arrivetime` time DEFAULT NULL,
+ `duration` time DEFAULT NULL,
+ `fare` float DEFAULT NULL,
+ PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE `images` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `image` varchar(100) DEFAULT NULL,
+ `image_text` text DEFAULT NULL,
+ `frontimage` varchar(255) NOT NULL,
+ PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE `passenger` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `sponser` varchar(255) DEFAULT NULL,
+ `sponserid` int(11) NOT NULL,
+ `name` varchar(255) DEFAULT NULL,
+ `dob` date DEFAULT NULL,
+ `gender` varchar(255) DEFAULT NULL,
+ `passcity` varchar(255) DEFAULT NULL,
+ `nationality` varchar(255) DEFAULT NULL,
+ `contactname` varchar(255) NOT NULL,
+ `contactphone` bigint(20) DEFAULT NULL,
+ `bookingid` int(11) NOT NULL,
+ `status` tinyint(1) NOT NULL DEFAULT 0,
+ PRIMARY KEY (`id`)
+);
